@@ -1,0 +1,386 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+  }
+  
+  .Container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .hero {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+  }
+  
+  .header::before {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: aqua; /* Light Blue */
+    filter: blur(100px); /* Adjust the blur radius as needed */
+    z-index: 5;
+  }
+  /* ... Your existing styles ... */
+  
+  .menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 10; /* Ensure the menu icon is above other elements */
+  }
+  
+  .menu-content {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 18px;
+    background-color: transparent;
+    width: 100%;
+    z-index: 15;
+    
+  }
+  
+  .menu-content a {
+    display: block;
+    text-align: right;
+    margin: 10px 0;
+    text-decoration: none;
+  }
+  
+  .menu-content.active {
+    display: flex;
+    flex-direction: column;
+    z-index: 20; /* Set a higher z-index when active */
+  }
+  .leftheader h4 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .leftheader b {
+    color: #007bff; /* Blue */
+  }
+  
+  .rightheader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rightheader a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .rightheader a:hover {
+    color: #007bff; /* Blue */
+  }
+  
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .mainleft {
+    flex: 1;
+    width: 300px;
+    padding: 5% 5%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+  }
+  
+ 
+  
+  
+  
+  
+
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .rightheader {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #B0E7F2;
+      width: 100%;
+    }
+  
+    .rightheader a {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .header {
+      position: relative;
+    }
+  
+    .main {
+      flex-direction: column;
+    }
+  
+    .mainleft,
+    .mainright {
+      width: 100%;
+      
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .rightheader {
+      display: flex !important; 
+    }
+  
+    .menu-icon {
+      display: none; /* Hide the menu icon on larger screens */
+    }
+  }
+  .circle1 {
+    position: absolute;
+    top: 100%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 50%;
+    z-index: -1;
+     opacity: 40%;
+    filter: blur(50px);
+  }
+  
+  .circle2 {
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    background-color: aqua;
+    border-radius: 50%;
+    opacity: 40%;
+    z-index: -1;
+   
+    filter: blur(50px);
+  }
+  .rectangle1 {
+  
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    opacity: 40%;
+    z-index: -9;
+  
+    filter: blur(50px);
+    
+  }
+  
+  
+  
+  
+  .rectangle2 {
+    margin-top: 10%;
+    position: absolute;
+    left: 500px;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    opacity: 40%;
+    z-index: -9;
+   
+    filter: blur(50px);
+  }
+  
+
+  
+
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    border: 5px solid aqua;
+    margin-top: auto; /* Push the footer to the bottom */
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    flex: 1;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  .footer-item h4 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  
+  .footer-item p,
+  .footer-item ul {
+    margin: 8px 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer-item li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-item a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  .footer-item a:hover {
+    color: #9c07ed; /* Purple color on hover */
+  }
+  
+  /* Creative Border Styles */
+  .footer-item::before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 16px); /* Adjusted width to ensure full coverage */
+    height: calc(100% + 16px); /* Adjusted height to ensure full coverage */
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    margin: -8px; /* Adjusted margin to ensure the border surrounds the content */
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .footer-item:hover::before {
+    opacity: 1;
+  }
+  
+  .content{
+
+    text-align: center;
+    color: #007bff;
+    align-items: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add styles for dark mode */
+body.dark-mode {
+  background-color: #000000;
+  color: #fff;
+}
+
+
+/* Add styles for dark mode button */
+.modeicon-dark {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: right;
+  
+}
+
+/* Add styles for dark mode button hover state */
+.modeicon-dark:hover {
+  color: #9c07ed; /* Purple color on hover */
+}
+/* ... Your existing styles ... */
+
+.circle1,
+.circle2,
+.rectangle1,
+.rectangle2 {
+  transition: opacity 0.5s ease;
+}
+
+body.dark-mode .circle1,
+body.dark-mode .circle2,
+body.dark-mode .rectangle1,
+body.dark-mode .rectangle2 {
+  opacity: 15%;
+  background-color: #9c07ed; 
+  
+}
+
+body.dark-mode footer {
+  background-color: #000000; 
+  border: 5px solid #007bff;
+}
+
+body.dark-mode .header,
+body.dark-mode .leftheader h4,
+body.dark-mode .rightheader a,
+body.dark-mode .menu-icon {
+  color: #fff; /* Text color for header elements in dark mode */
+}
+
+/* Update styles for right header anchor hover state in dark mode */
+body.dark-mode .rightheader a:hover {
+  color: #9c07ed; /* Purple color on hover */
+}
+
+body.dark-mode .menu-content a {
+  color: #fff; /* Text color for menu anchor texts in dark mode */
+  transition: color 0.3s ease;
+}
+
+/* Update styles for menu anchor texts hover state in dark mode */
+body.dark-mode .menu-content a:hover {
+  color: #9c07ed; /* Purple color on hover */
+}
+
+
+
+
+
+
