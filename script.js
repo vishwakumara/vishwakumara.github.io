@@ -3,7 +3,7 @@ function toggleMenu() {
   menuContent.classList.toggle("active");
 }
 
-/*document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const h2Element = document.getElementById("changingText");
   const paragraphElement = document.getElementById("paragraphContent");
   const textOptions = [
@@ -55,7 +55,7 @@ function toggleMenu() {
     // Start typing animation
     setTimeout(type, 0);
   }
-});*/
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   const mainLeftImage = document.querySelector(".mainleft img");
