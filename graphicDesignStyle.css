@@ -50,20 +50,21 @@ body {
     z-index: 10; /* Ensure the menu icon is above other elements */
   }
   
-  .menu-content {
+   .menu-content {
     display: none;
     position: fixed;
     top: 70px;
-    right: 18px;
-    background-color: transparent;
+    background-color:transparent;
     width: 100%;
     z-index: 15;
+    text-align: center;
+    
     
   }
   
   .menu-content a {
     display: block;
-    text-align: right;
+    text-align: center;
     margin: 10px 0;
     text-decoration: none;
   }
