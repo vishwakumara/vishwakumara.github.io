@@ -166,22 +166,22 @@ body {
   }
   .circle1 {
     position: absolute;
-    top: 100%;
-    left: 90%;
+    top: 50%;
+    left: 70%;
     transform: translate(-50%, -50%);
     width: 500px;
     height: 500px;
     background-color: aqua;
     border-radius: 50%;
+    opacity: 40%;
     z-index: -1;
-     opacity: 40%;
-    filter: blur(50px);
+    filter: blur(100px);
   }
   
   .circle2 {
     position: absolute;
     top: 100%;
-    left: 80%;
+    left: 70%;
     transform: translate(-50%, -50%);
     width: 700px;
     height: 700px;
@@ -189,43 +189,23 @@ body {
     border-radius: 50%;
     opacity: 40%;
     z-index: -1;
-   
-    filter: blur(50px);
-  }
-  .rectangle1 {
-  
-    position: absolute;
-    top: 300px;
-    left: 300px;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    height: 400px;
-    background-color: aqua;
-    opacity: 40%;
-    z-index: -9;
-  
-    filter: blur(50px);
-    
+    filter: blur(100px);
   }
   
-  
-  
-  
-  .rectangle2 {
-    margin-top: 10%;
-    position: absolute;
-    left: 500px;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    height: 400px;
-    background-color: aqua;
-    opacity: 40%;
-    z-index: -9;
-   
-    filter: blur(50px);
+  @media screen and (max-width: 1200px) {
+    .circle1,
+    .circle2 {
+      width: 80vw; /* Adjust the width as needed for smaller screens */
+      height: 200vw; /* Maintain aspect ratio for smaller screens */
+      max-width: 100%; 
+      top: 100%;
+      left: 40%;
+      padding-right: 20%;
+      filter: blur(200px);
+      
+    }
   }
-  
-
+ 
   
 
   

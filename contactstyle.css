@@ -54,7 +54,7 @@ body {
     display: none;
     font-size: 1.5em;
     cursor: pointer;
-    z-index: 10; /* Ensure the menu icon is above other elements */
+    z-index: 20; /* Ensure the menu icon is above other elements */
   }
   
   .menu-content {
@@ -154,11 +154,7 @@ body {
       flex-direction: column;
     }
   
-    .mainleft,
-    .mainright {
-      width: 100%;
-      
-    }
+    
   }
   
   @media screen and (min-width: 768px) {
@@ -173,63 +169,87 @@ body {
   .circle1 {
     position: absolute;
     top: 100%;
-    left: 90%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background-color: aqua;
     border-radius: 50%;
+    opacity: 40%;
     z-index: -1;
-     opacity: 40%;
     filter: blur(50px);
+    padding-right: 10%;
   }
   
   .circle2 {
     position: absolute;
     top: 100%;
-    left: 80%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
     background-color: aqua;
     border-radius: 50%;
     opacity: 40%;
     z-index: -1;
-   
     filter: blur(50px);
+    padding-right: 10%;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .circle1,
+    .circle2 {
+      width: 80vw; /* Adjust the width as needed for smaller screens */
+      height: 80vw; /* Maintain aspect ratio for smaller screens */
+      max-width: 100%; 
+      top: 100%;
+      left: 40%;
+      padding-right: 20%;
+      
+    }
   }
   .rectangle1 {
-  
     position: absolute;
-    top: 300px;
-    left: 300px;
+    top: 20%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 500px;
     background-color: aqua;
     opacity: 40%;
     z-index: -9;
-  
     filter: blur(50px);
-    
+    padding-right: 10%;
   }
-  
-  
-  
   
   .rectangle2 {
     margin-top: 10%;
     position: absolute;
-    left: 500px;
+    top: 65%;
+    left: 20%;
     transform: translate(-50%, -50%);
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 500px;
     background-color: aqua;
     opacity: 40%;
     z-index: -9;
-   
     filter: blur(50px);
+    padding-right: 10%;
   }
+  
+  @media screen and (max-width: 768px) {
+    .mainleft {
+      padding: 5%;
+    }
+  
+    .rectangle1,
+    .rectangle2 {
+      width: 80%; /* Adjust the width for smaller screens */
+      max-width: 100%; /* Allow them to take full width on smaller screens */
+      height: auto;
+    }
+  }
+  
   
 
   
@@ -317,13 +337,13 @@ body {
     border-radius: 50%;
     z-index: 0;
   
-    box-shadow: 0 0 500px rgba(237, 9, 180, 0.5); /* Creative shadow effect */
+    box-shadow: 0 0 200px rgba(237, 9, 180, 0.5); /* Creative shadow effect */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added transition for smooth effect */
   }
   
   .profile img:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 300px rgba(76, 11, 216, 0.8); /* Adjusted shadow on hover */
+    box-shadow: 0 0 100px rgba(76, 11, 216, 0.8); /* Adjusted shadow on hover */
   }
   
   
