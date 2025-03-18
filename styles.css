@@ -31,11 +31,28 @@ body {
     body {
         padding: 20px;
         text-align: center; /* Center align content */
+        min-width: 100%;
     }
 }
 
-/* Responsive adjustments for .newsbody */
 
+@media (max-width: 768px) {
+    .newsbody {
+
+        margin-left: 10px;
+        padding: 20px;
+       
+    }
+}
+
+@media (max-width: 480px) {
+    .newsbody {
+        margin-left: 10px;
+        padding: 20px;
+        
+        
+    }
+}
 
 
 /* Adding a dark blur effect */
