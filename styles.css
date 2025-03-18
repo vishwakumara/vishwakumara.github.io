@@ -679,26 +679,7 @@ footer a:hover {
     }
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-    .warning-alert {
-        background: #d32f2f; /* Darker red for dark mode */
-        color: #f1f1f1; /* Light text */
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
-    }
 
-    .warning-content {
-        background: #b71c1c; /* Darker red for content */
-    }
-
-    .warning-close-btn {
-        color: #f1f1f1;
-    }
-
-    .warning-close-btn:hover {
-        background: rgba(255, 255, 255, 0.3);
-    }
-}
 
 .skills {
     text-align: center;
