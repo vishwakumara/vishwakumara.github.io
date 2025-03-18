@@ -13,6 +13,28 @@ body {
  
 }
 
+@media (max-width: 1024px) {
+    body {
+        padding: 40px; /* More padding on tablets */
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 60px; /* Increase padding for smaller devices */
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 75%;
+        padding: 80px; /* Full padding on very small screens */
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+    }
+}
 
 /* Adding a dark blur effect */
 body::before {
@@ -668,6 +690,9 @@ footer a:hover {
 
     .warning-content {
         padding: 15px 20px;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
     }
 
     .warning-icon {
