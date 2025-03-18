@@ -22,14 +22,14 @@ body {
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
     body {
-        
+        margin: 10px;
     }
 }
 
 /* Adjust for very small screens */
 @media (max-width: 480px) {
     body {
-        
+         margin: 10px;
         text-align: center; /* Center align content */
         min-width: 100%;
     }
