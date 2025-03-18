@@ -43,7 +43,7 @@ body {
 
 @media (max-width: 768px) {
     .newsbody {
-        width: 100%; /* Increase padding for smaller screens */
+        width: 600px; /* Increase padding for smaller screens */
         margin-left: 20px;
         
     }
