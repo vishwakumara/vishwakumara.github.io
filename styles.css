@@ -43,7 +43,7 @@ body {
 
 @media (max-width: 768px) {
     .newsbody {
-        width: 600px; /* Increase padding for smaller screens */
+        width: 570px; /* Increase padding for smaller screens */
         margin-left: 20px;
         
     }
@@ -51,7 +51,7 @@ body {
 
 @media (max-width: 480px) {
     .newsbody {
-        width: 600px;
+        width: 570px;
         margin-left: 12px;
     }
 }
