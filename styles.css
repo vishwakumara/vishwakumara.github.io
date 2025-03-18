@@ -26,7 +26,8 @@ body {
         padding: 60px; /* Increase padding for smaller devices */
         width: 80%;
         align-items: center;
-        margin: 15px;
+        margin: 10px;
+        margin-left: 10px;
         
     }
 }
@@ -38,7 +39,8 @@ body {
         flex-direction: column; /* Stack elements vertically */
         text-align: center;
         align-items: center;
-        margin: 20px;
+        margin: 15px;
+        margin-left: 15px;
     }
 }
 
@@ -692,12 +694,14 @@ footer a:hover {
         width: 90%;
         font-size: 18px;
         padding: 15px 20px;
+        align-items: center !important;
+        text-align: center !important;
     }
 
     .warning-content {
         padding: 15px 20px;
-        align-items: center;
-        text-align: center;
+        align-items: center !important;
+        text-align: center !important;
         padding: 10px;
     }
 
@@ -706,7 +710,9 @@ footer a:hover {
     }
 
     .warning-message {
-        font-size: 14px;
+        font-size: 12px;
+        text-align: center !important;
+        align-items: center !important;
     }
 }
 
