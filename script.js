@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <h2>⚠️ WARNING ⚠️</h2>
         </div>
         <div class="warning-content-message">
-            <h4>⚠️ it might be harmfull to your device ⚠️</h4>
+            <h4>⚠️ You are Hacked ! ⚠️</h4>
         </div>
 
     `;
