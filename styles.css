@@ -15,21 +15,21 @@ body {
 
 @media (max-width: 1024px) {
     body {
-        padding: 30px;
+        
     }
 }
 
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
     body {
-        padding: 40px;
+        
     }
 }
 
 /* Adjust for very small screens */
 @media (max-width: 480px) {
     body {
-        padding: 20px;
+        
         text-align: center; /* Center align content */
         min-width: 100%;
     }
