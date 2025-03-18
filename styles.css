@@ -52,6 +52,7 @@ body {
 @media (max-width: 480px) {
     .newsbody {
         width: 570px;
+        margin-left: 10px;
         
     }
 }
