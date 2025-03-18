@@ -22,7 +22,7 @@ body {
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
     body {
-        
+        margin: 20px;
     }
 }
 
@@ -30,6 +30,7 @@ body {
 @media (max-width: 480px) {
     body {
         
+        margin: 20px;
         text-align: center; /* Center align content */
         min-width: 100%;
     }
