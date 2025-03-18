@@ -22,7 +22,7 @@ body {
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
     body {
-        margin: 20px;
+        margin: 20px !important;
     }
 }
 
@@ -30,9 +30,9 @@ body {
 @media (max-width: 480px) {
     body {
         
-        margin: 20px;
+        margin: 20px !important;
         text-align: center; /* Center align content */
-        min-width: 100%;
+        
     }
 }
 
