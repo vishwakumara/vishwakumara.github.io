@@ -17,6 +17,7 @@ body {
     body {
         padding: 40px; /* More padding on tablets */
         width: 100%;
+       
     }
 }
 
@@ -24,6 +25,9 @@ body {
     body {
         padding: 60px; /* Increase padding for smaller devices */
         width: 80%;
+        align-items: center;
+        margin: 10px;
+        
     }
 }
 
@@ -33,6 +37,8 @@ body {
         padding: 80px; /* Full padding on very small screens */
         flex-direction: column; /* Stack elements vertically */
         text-align: center;
+        align-items: center;
+        margin: 10px;
     }
 }
 
