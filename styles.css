@@ -15,34 +15,47 @@ body {
 
 @media (max-width: 1024px) {
     body {
-        padding: 40px; /* More padding on tablets */
-        width: 100%;
-       
+        padding: 30px;
+    }
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 40px;
+    }
+}
+
+/* Adjust for very small screens */
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+        text-align: center; /* Center align content */
+    }
+}
+
+/* Responsive adjustments for .newsbody */
+@media (max-width: 1024px) {
+    .newsbody {
+        width: 100%; /* Adjust padding for tablets */
     }
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 60px; /* Increase padding for smaller devices */
-        width: 80%;
-        align-items: center;
-        margin: 10px;
-        margin-left: 10px;
+    .newsbody {
+        width: 600px; /* Increase padding for smaller screens */
+        margin-left: 20px;
         
     }
 }
 
 @media (max-width: 480px) {
-    body {
-        width: 75%;
-        padding: 80px; /* Full padding on very small screens */
-        flex-direction: column; /* Stack elements vertically */
-        text-align: center;
-        align-items: center;
-        margin: 15px;
-        margin-left: 15px;
+    .newsbody {
+        width: 600px;
+        margin-left: 10px;
     }
 }
+
 
 /* Adding a dark blur effect */
 body::before {
