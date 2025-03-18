@@ -22,7 +22,7 @@ body {
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
     body {
-        margin: 20px !important;
+        
     }
 }
 
@@ -30,9 +30,8 @@ body {
 @media (max-width: 480px) {
     body {
         
-        margin: 20px !important;
         text-align: center; /* Center align content */
-        
+        min-width: 100%;
     }
 }
 
@@ -714,6 +713,7 @@ footer a:hover {
     }
 
     .warning-content {
+        margin: 20px;
         padding: 15px 20px;
         align-items: center !important;
         text-align: center !important;
@@ -725,7 +725,7 @@ footer a:hover {
     }
 
     .warning-message {
-        font-size: 12px;
+        font-size: 10px;
         text-align: center !important;
         align-items: center !important;
     }
