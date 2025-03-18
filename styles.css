@@ -35,27 +35,7 @@ body {
 }
 
 /* Responsive adjustments for .newsbody */
-@media (max-width: 1024px) {
-    .newsbody {
-        width: 100%; /* Adjust padding for tablets */
-    }
-}
 
-@media (max-width: 768px) {
-    .newsbody {
-        width: 600px; /* Increase padding for smaller screens */
-        
-        
-    }
-}
-
-@media (max-width: 480px) {
-    .newsbody {
-        width: 90%;
-        margin-left: 10px;
-        
-    }
-}
 
 
 /* Adding a dark blur effect */
