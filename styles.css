@@ -39,6 +39,7 @@ body {
 @media (max-width: 768px) {
     .newsbody {
 
+        margin-left: 10px !important;
         margin-right: 20px !important;
         padding-right: 20px !important;
         
@@ -49,6 +50,7 @@ body {
 @media (max-width: 480px) {
     .newsbody {
         
+        margin-left: 10px !important;
         margin-right: 20px !important;
         padding-right: 20px !important;
         
